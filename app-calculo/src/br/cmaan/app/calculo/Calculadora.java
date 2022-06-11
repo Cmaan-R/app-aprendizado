@@ -4,6 +4,7 @@ import br.cmaan.app.calculo.interno.OperacoesAritmeticas;
 import br.cmaan.app.logging.Logger;
 
 public class Calculadora {
+	private String id = "abc";
 	
 	private OperacoesAritmeticas opAritmeticas = new OperacoesAritmeticas();
 
@@ -11,6 +12,12 @@ public class Calculadora {
 		Logger.info("Somando");
 		return opAritmeticas.soma(nums);
 	}
+
+	public String getId() {
+		return id;
+	}
+	
+	
 	
 	
 }
